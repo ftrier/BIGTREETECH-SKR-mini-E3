@@ -1283,7 +1283,7 @@
   //#define SD_DETECT_STATE HIGH
 
   //#define SD_IGNORE_AT_STARTUP            // Don't mount the SD card when starting up
-  //#define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
+  #define SDCARD_READONLY                 // Read-only SD card (to save over 2K of flash)
 
   //#define GCODE_REPEAT_MARKERS            // Enable G-code M808 to set repeat markers and do looping
 
@@ -3653,9 +3653,9 @@
  * Host Prompt Support enables Marlin to use the host for user prompts so
  * filament runout and other processes can be managed from the host side.
  */
-#define HOST_ACTION_COMMANDS
+// #define HOST_ACTION_COMMANDS
 #if ENABLED(HOST_ACTION_COMMANDS)
-  #define HOST_PROMPT_SUPPORT
+  // #define HOST_PROMPT_SUPPORT
   //#define HOST_START_MENU_ITEM  // Add a menu item that tells the host to start
 #endif
 
