@@ -1061,7 +1061,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 10, 10, 0 }
+
+// measured as described here https://marlinfw.org/docs/gcode/M851.html
+// by moving down the the probe
+// the rest i measured with an ruler
+#define NOZZLE_TO_PROBE_OFFSET { -42, -5, -3.8 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
